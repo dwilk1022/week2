@@ -6,12 +6,11 @@ function random(min, max) {
 
 var Burien = {
   name: '152nd st',
-  minCustsPerHour: 22,
   maxCustsPerHour: 46,
+  minCustsPerHour: 22,
   avgCookiesPerCust: 7.6,
   custsEachHour: [],
   cookiesEachHour: [],
-  totalDailySales: 0,
   calcCustsEachHour: function(){
     for(var i = 0; i < hours.length; i++){
       this.custsEachHour.push(random(this.minCustsPerHour, this.maxCustsPerHour));
@@ -23,20 +22,18 @@ var Burien = {
       var oneHour = Math.ceil(this.custsEachHour[i] * this.avgCookiesPerCust);
       console.log(oneHour, 'one hour');
       this.cookiesEachHour.push(oneHour);
-      this.totalDailySales += oneHour;
-      console.log(this.totalDailySales, 'total');
+      console.log(this.cookiesEachHour, 'total');
     }
   },
 }
 
 var Normandy Park = {
   name: 'Manhattan Village',
-  minCustsPerHour: 33,
   maxCustsPerHour: 78,
+  minCustsPerHour: 33,
   avgCookiesPerCust: 8.1,
   custsEachHour: [],
   cookiesEachHour: [],
-  totalDailySales: 0,
   calcCustsEachHour: function(){
     for(var i = 0; i < hours.length; i++){
       this.custsEachHour.push(random(this.minCustsPerHour, this.maxCustsPerHour));
@@ -56,12 +53,11 @@ var Normandy Park = {
 
 var Lake Stevens = {
   name: 'Frontier Village',
-  minCustsPerHour: 22,
   maxCustsPerHour: 46,
+  minCustsPerHour: 22,
   avgCookiesPerCust: 7.6,
   custsEachHour: [],
   cookiesEachHour: [],
-  totalDailySales: 0,
   calcCustsEachHour: function(){
     for(var i = 0; i < hours.length; i++){
       this.custsEachHour.push(random(this.minCustsPerHour, this.maxCustsPerHour));
@@ -80,13 +76,12 @@ var Lake Stevens = {
 }
 
 var Des Moins = {
-  name: '',
-  minCustsPerHour: 13,
+  name: 'Marina',
   maxCustsPerHour: 27,
+  minCustsPerHour: 13,
   avgCookiesPerCust: 5.3,
   custsEachHour: [],
   cookiesEachHour: [],
-  totalDailySales: 0,
   calcCustsEachHour: function(){
     for(var i = 0; i < hours.length; i++){
       this.custsEachHour.push(random(this.minCustsPerHour, this.maxCustsPerHour));
@@ -106,12 +101,11 @@ var Des Moins = {
 
 var Seattle = {
   name: '4th Ave',
-  minCustsPerHour: 22,
-  maxCustsPerHour: 46,
-  avgCookiesPerCust: 7.6,
+  maxCustsPerHour: 43,
+  minCustsPerHour: 55,
+  avgCookiesPerCust: 10.3,
   custsEachHour: [],
   cookiesEachHour: [],
-  totalDailySales: 0,
   calcCustsEachHour: function(){
     for(var i = 0; i < hours.length; i++){
       this.custsEachHour.push(random(this.minCustsPerHour, this.maxCustsPerHour));
@@ -123,8 +117,7 @@ var Seattle = {
       var oneHour = Math.ceil(this.custsEachHour[i] * this.avgCookiesPerCust);
       console.log(oneHour, 'one hour');
       this.cookiesEachHour.push(oneHour);
-      this.totalDailySales += oneHour;
-      console.log(this.totalDailySales, 'total');
+      console.log(this.cookiesEachHour, 'total');
     }
   },
 }
