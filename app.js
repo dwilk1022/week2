@@ -190,3 +190,10 @@ lakeStevens.render();
 southPark.render();
 desMoins.render();
 everett.render();
+
+function store(title, minCustsPerHour, maxCustsPerHour, avgCookiesPerCust){
+this.title = title;
+this.minCustsPerHour = minCustsPerHour;
+this.maxCustsPerHour = maxCustsPerHour;
+this.avgCookiesPerCust = avgCookiesPerCust;
+}
